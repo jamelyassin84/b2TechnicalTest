@@ -1,4 +1,11 @@
+install xaamp, mysql
+
+create b2Connect table
+
 open terminal 
+
+navigate to app.module
+enable synchronize:true
 
 $ npm install
 

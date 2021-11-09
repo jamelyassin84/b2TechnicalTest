@@ -18,7 +18,7 @@ import { JwtModule } from '@nestjs/jwt';
 			password: '',
 			database: 'b2Connect',
 			entities: [User],
-			// synchronize: true,
+			// synchronize: true, //enable this to synchronize user table
 		}),
 		TypeOrmModule.forFeature([User]),
 		JwtModule.register({
