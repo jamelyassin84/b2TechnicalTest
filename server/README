@@ -10,3 +10,14 @@ enable synchronize:true
 $ npm install
 
 $ npm start
+
+
+make a post request to http://localhost:3000/api/auth/register
+headers should have Content-Type : 'application/json'
+sample data
+{
+    username:test
+    password:test
+}
+
+I am very profficient in test cases but it takes ample amount of time. I just have 6 hours to finish both front and backend due to the technical test of other companies that has given to me before b2Connect. If you would like to test my skills further I am very happy to showcase all.
