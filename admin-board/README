@@ -1,0 +1,7 @@
+open terminal 
+
+$ npm install
+
+$ ng serve -o
+
+random ipaddresses https://catonmat.net/tools/generate-random-ip-addresses

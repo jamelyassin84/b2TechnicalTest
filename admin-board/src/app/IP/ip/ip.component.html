@@ -1,0 +1,51 @@
+<div class="mt-5">
+    <div class="form-group">
+        <label for="">IPv4</label>
+        <input (keyup.enter)="lookUp()" [(ngModel)]="ip" type="text" class="form-control">
+    </div>
+    <button (click)="lookUp()" class="btn btn-dark">IP Look-up</button>
+
+    <div class="row mt-5">
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted">IP Address</div>
+            <div class="h5">{{details.ip}}</div>
+        </div>
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted">Type</div>
+            <div class="h5">{{details.type}}</div>
+        </div>
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted">Contenent</div>
+            <div class="h5">{{details.continent_name}}</div>
+        </div>
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted d-flex w-100" style="align-items: center;">Country <span class="ml-auto mr-5">
+                    <img  style="height: 20px;width: 20px;border-radius: 50%;" [src]="details?.location?.country_flag" alt="">
+                </span></div>
+            <div class="h5">
+                {{details.country_name}}
+            </div>
+        </div>
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted">Region</div>
+            <div class="h5">{{details.region_name}}</div>
+        </div>
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted"> City</div>
+            <div class="h5">{{details.city}}</div>
+        </div>
+
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted"> Latitude</div>
+            <div class="h5">{{details.latitude}}</div>
+        </div>
+        <div class="col-md-4 mt-3 mt-3">
+            <div class="text-muted"> Longitude</div>
+            <div class="h5">{{details.longitude}}</div>
+        </div>
+        <div leaflet class="map mb-5 mt-5" *ngIf="details.longitude !== undefined" [leafletOptions]="options">
+        </div>
+
+    </div>
+
+</div>

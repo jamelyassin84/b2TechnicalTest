@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-dark">
+    <span class="navbar-brand mb-0 h1">b2Connect (Admin Board)</span>
+    <div class="ml-auto">
+        <button [routerLink]="nav.route" class="btn btn-dark mr-2" *ngFor="let nav of navs">
+            <i [class]="'mr-2 bi ' + nav.icon"></i>
+            {{nav.name}}
+        </button>
+    </div>
+</nav>

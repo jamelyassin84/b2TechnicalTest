@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-9 mt-5">
+        <canvas baseChart width="400" height="400" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="'line'" [plugins]="lineChartPlugins">
+    </canvas>
+    </div>
+    <div class="col-md-3 mt-5 pt-5">
+        <h1>Real-time Data</h1>
+        <span class="text-muted">Random data from backend using sockets</span>
+        <p>New Data: <span class="text-success ml-2 bold">{{newData}}</span></p>
+    </div>
+</div>
