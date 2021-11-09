@@ -1,25 +1,18 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { CurrencyExchangeComponent } from './currency-exchange.component';
+import { CurrencyExchangeComponent } from './currency-exchange.component'
 
 describe('CurrencyExchangeComponent', () => {
-  let component: CurrencyExchangeComponent;
-  let fixture: ComponentFixture<CurrencyExchangeComponent>;
+	let component: CurrencyExchangeComponent
+	let fixture: ComponentFixture<CurrencyExchangeComponent>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ CurrencyExchangeComponent ]
-    })
-    .compileComponents();
-  });
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			declarations: [CurrencyExchangeComponent],
+		}).compileComponents()
+	})
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CurrencyExchangeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {})
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+	it('should create', () => {})
+})

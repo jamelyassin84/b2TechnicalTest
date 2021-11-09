@@ -1,11 +1,11 @@
 <div class="mt-5">
     <div class="form-group">
-        <label for="">IPv4</label>
+        <label for="">Enter Ip</label>
         <input (keyup.enter)="lookUp()" [(ngModel)]="ip" type="text" class="form-control">
     </div>
     <button (click)="lookUp()" class="btn btn-dark">IP Look-up</button>
 
-    <div class="row mt-5">
+    <div class="row mt-5" *ngIf="details.ip !== undefined">
         <div class="col-md-4 mt-3 mt-3">
             <div class="text-muted">IP Address</div>
             <div class="h5">{{details.ip}}</div>
@@ -20,7 +20,7 @@
         </div>
         <div class="col-md-4 mt-3 mt-3">
             <div class="text-muted d-flex w-100" style="align-items: center;">Country <span class="ml-auto mr-5">
-                    <img  style="height: 20px;width: 20px;border-radius: 50%;" [src]="details?.location?.country_flag" alt="">
+                    <img  style="height: 20px;width: 20px;border-radius: 50%;"  [src]="details?.location?.country_flag" alt="">
                 </span></div>
             <div class="h5">
                 {{details.country_name}}

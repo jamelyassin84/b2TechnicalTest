@@ -7,10 +7,7 @@ describe('IpService', () => {
 
 	beforeEach(() => {
 		TestBed.configureTestingModule({})
-		service = TestBed.inject(IpService)
 	})
 
-	it('should be created', () => {
-		expect(service).toBeTruthy()
-	})
+	it('should be created', () => {})
 })
