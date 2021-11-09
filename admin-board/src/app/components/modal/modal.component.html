@@ -1,0 +1,21 @@
+<div class="modal" *ngIf="showModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Please Log-in to continue</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <label for="">Username</label>
+                <input [(ngModel)]="username" type="text" class="form-control mb-3">
+                <label for="">Password</label>
+                <input [(ngModel)]="password" type="password" class="form-control mb-3">
+            </div>
+            <div class="modal-footer">
+                <button (click)="login()" type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+</div>

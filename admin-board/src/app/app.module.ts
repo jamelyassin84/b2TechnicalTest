@@ -13,7 +13,8 @@ import { VisualizationComponent } from './graph/visualization/visualization.comp
 import { CurrencyExchangeComponent } from './exchange/currency-exchange/currency-exchange.component'
 import { NavbarComponent } from './shared/navbar/navbar.component'
 import { environment } from 'src/environments/environment'
-import { FilterTablePipe } from './pipes/filter/filter-table.pipe'
+import { FilterTablePipe } from './pipes/filter/filter-table.pipe';
+import { ModalComponent } from './components/modal/modal.component'
 
 const config: SocketIoConfig = {
 	url: environment.socket,
@@ -30,6 +31,7 @@ const config: SocketIoConfig = {
 		CurrencyExchangeComponent,
 		NavbarComponent,
 		FilterTablePipe,
+  ModalComponent,
 	],
 	imports: [
 		BrowserModule,
